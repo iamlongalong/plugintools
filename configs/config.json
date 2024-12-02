@@ -1,0 +1,26 @@
+{
+    "server": {
+        "host": "localhost",
+        "port": 8080,
+        "read_timeout": 30,
+        "write_timeout": 30
+    },
+    "security": {
+        "api_keys": ["test-api-key"],
+        "enable_auth": true
+    },
+    "tools": {
+        "file_manager": {
+            "allowed_paths": ["/tmp", "/home"],
+            "max_file_size": 104857600
+        },
+        "shell_executor": {
+            "allowed_commands": ["ls", "ps", "df", "du"],
+            "max_timeout": 300
+        },
+        "scheduler": {
+            "max_tasks": 1000,
+            "enable_notifications": true
+        }
+    }
+} 
